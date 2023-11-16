@@ -65,7 +65,7 @@ li a {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  padding: 5px;
+  padding: 7px;
 }
 
 .email-tlpn {
@@ -75,16 +75,35 @@ li a {
 
 .tlp-mail {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #fff;
-  margin-right: 10px;
+  margin-right: 15px;
   align-items: center;
+  width: 130px;
+  cursor: pointer;
 }
 
-.contac-info img {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 10px;
+.tlp-mail i:hover {
+  color: orange;
+  transition: 0.3s;
+}
+
+.icon-sosmed .sosmedia i {
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.icon-sosmed .sosmedia i:hover {
+  color: orange;
+  transition: 0.3s;
+}
+
+.icon-sosmed .sosmedia {
+  padding: 3px;
+  display: flex;
+  justify-content: space-around;
+  width: 140px;
+  color: #fff;
 }
 
 /* content */
