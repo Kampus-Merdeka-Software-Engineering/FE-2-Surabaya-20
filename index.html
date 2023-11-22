@@ -3,72 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/index.css" />
-    <script src="https://kit.fontawesome.com/ca9af5e3fc.js" crossorigin="anonymous"></script>
     <title>Capstone Project | group20</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="CSS/index.css" />
   </head>
   <body>
-    <!-- Header -->
-    <section class="main">
-      <!-- navbar -->
-      <header class="container">
-        <div class="contac-info">
-          <div class="email-tlpn">
-            <div class="tlp-mail">
-              <i class="fa-solid fa-phone fa-lg"></i>
-              <h6>+62876-6542-6657</h6>
-            </div>
+    <!-- Header start -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="assets/group-logo.png" alt="logoBrand" />
+      </a>
 
-            <div class="tlp-mail">
-              <i class="fa-regular fa-envelope fa-lg"></i>
-              <h6>yummy@gmail.com</h6>
-            </div>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#product">Product</a>
+        <a href="#offers">Offers</a>
+        <a href="#review">Review</a>
+        <a href="book.html">Book</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="assets/buger.jpg" alt="cartItem" />
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">Rp 15.000/-</div>
           </div>
+        </div>
 
-          <div class="icon-sosmed">
-            <div class="sosmedia">
-              <i class="fa-brands fa-square-twitter fa-xl"></i>
-              <i class="fa-brands fa-square-facebook fa-xl"></i>
-              <i class="fa-brands fa-square-instagram fa-xl"></i>
-              <i class="fa-brands fa-square-github fa-xl"></i>
-            </div>
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="assets/cake.jpg" alt="cartItem" />
+          <div class="content">
+            <h3>cart item 02</h3>
+            <div class="price">Rp 25.000/-</div>
           </div>
         </div>
 
-        <div class="nav">
-          <div class="logo">PrimeRESTO</div>
-
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="book.html">Book</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </header>
-
-      <section class="content">
-        <h1>Sensational Flavors to Tantalize Your Palate</h1>
-        <button type="button"><a href="book.html">Book A Table</a></button>
-      </section>
-    </section>
-
-    <!-- main content -->
-    <section class="about">
-      <div class="aboutAs">
-        <div class="gambar">
-          <img src="asset/about.jpg" alt="aboutAs" />
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="assets/sandwich.jpg" alt="cartItem" />
+          <div class="content">
+            <h3>cart item 03</h3>
+            <div class="price">Rp 30.000/-</div>
+          </div>
         </div>
 
-        <div class="text">
-          <h3>About As</h3>
-          <p class="text-tebal">We provide healthy food for your family.</p>
-          <p>
-            Indulge in Nourishing Delights! We're dedicated to providing wholesome and healthy food choices that your family will love. Discover a menu crafted with care, where each bite is a commitment to your family's well-being. Because
-            at [Your Restaurant Name], we believe in the power of nutritious and delicious meals for a happier, healthier you.
-          </p>
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="assets/chocolate.jpg" alt="cartItem" />
+          <div class="content">
+            <h3>cart item 04</h3>
+            <div class="price">Rp. 15.000/-</div>
+          </div>
         </div>
+        <a href="#" class="btn">checkout now</a>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- About start -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Sensational Flavors to Tantalize Your Palate</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo tempore distinctio rerum accusamus libero maiores error animi eligendi similique.</p>
+        <a href="#" class="btn">get your now</a>
       </div>
     </section>
+    <!-- about end -->
   </body>
 </html>
