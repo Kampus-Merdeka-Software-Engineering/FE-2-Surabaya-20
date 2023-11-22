@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capstone Project | group20</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="CSS/menu.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="assets/group-logo.png" alt="logoBrand" />
+      </a>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#product">Product</a>
+        <a href="#offers">Offers</a>
+        <a href="#review">Review</a>
+        <a href="book.html">Book</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fas fa-search"></label>
+      </div>
+
+      <div class="cart-items-container">
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="assets/buger.jpg" alt="cartItem" />
+          <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">Rp 15.000/-</div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="assets/cake.jpg" alt="cartItem" />
+          <div class="content">
+            <h3>cart item 02</h3>
+            <div class="price">Rp 25.000/-</div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="assets/sandwich.jpg" alt="cartItem" />
+          <div class="content">
+            <h3>cart item 03</h3>
+            <div class="price">Rp 30.000/-</div>
+          </div>
+        </div>
+
+        <div class="cart-item">
+          <span class="fas fa-times"></span>
+          <img src="assets/chocolate.jpg" alt="cartItem" />
+          <div class="content">
+            <h3>cart item 04</h3>
+            <div class="price">Rp. 15.000/-</div>
+          </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Home start -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>our menu</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo tempore distinctio rerum accusamus libero maiores error animi eligendi similique.</p>
+      </div>
+    </section>
+    <!-- home end -->
+
+    <!-- Menu start -->
+    <div class="daftar">
+      <a href="#dishes" class="btn">Main Dishes</a>
+      <a href="#beverage" class="btn">Beverages</a>
+      <a href="#dessert" class="btn">Dessert</a>
+    </div>
+    <section class="list" id="list">
+      <!-- Main Dishes start-->
+      <h1 class="heading" id="dishes">Main <span>Dishes</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="assets/steak.jpg" alt="gambarBiryani" />
+          <div class="list-menu">
+            <div class="price-menu">
+              <h3>PRIME ANGUS STRIPLOIN</h3>
+              <div class="price">Rp 230.000</div>
+            </div>
+            <p>Grilled aussy premium angusstriploin with mixed salad,chimmichuri mushroom sauce</p>
+            <div class="price-menu">
+              <h3>TENDERLOIN</h3>
+              <div class="price">Rp 140.000</div>
+            </div>
+            <p>Grilled aussy premium angusstriploin with mixed salad,chimmichuri mushroom sauce</p>
+            <div class="price-menu">
+              <h3>MEAT STEAK 150GR</h3>
+              <div class="price">Rp 250.000</div>
+            </div>
+            <p>Grilled US Top Blade served withfrench fries, mixed salad andmushroom sauce</p>
+            <div class="price-menu">
+              <h3>MEAT STEAK 150GR</h3>
+              <div class="price">Rp 250.000</div>
+            </div>
+            <p>Grilled US Top Blade served withfrench fries, mixed salad andmushroom sauce</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/pasta.jpg" alt="gambarLasagna" />
+          <div class="list-menu">
+            <div class="price-menu">
+              <h3>AGLIO E OLIO</h3>
+              <div class="price">Rp 60.000</div>
+            </div>
+            <p>Pasta is prepared with shrimp, spices and baguette bread.</p>
+            <div class="price-menu">
+              <h3>CARBONARA SMOKED BEEF</h3>
+              <div class="price">Rp 65.000</div>
+            </div>
+            <p>Pasta is prepared with cheese sauce, smoked beef and baguette bread.</p>
+            <div class="price-menu">
+              <h3>BOLOGNESE</h3>
+              <div class="price">Rp 65.000</div>
+            </div>
+            <p>Pasta prepared with tomato sauce, with minced meat, baguette bread.</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/soy-beansoup.jpg" alt="gambarSate1" />
+          <div class="list-menu">
+            <div class="price-menu">
+              <h3>NASI CAMPUR NUSANTARA</h3>
+              <div class="price">Rp 88.000</div>
+            </div>
+            <p>Basmati rice, basil leaves, bone marrow, free-range fried chicken, 1 skewer rice satay, dried potatoes, shredded meat, lettuce, cucumber, sambal Belacan</p>
+            <div class="price-menu">
+              <h3>HAINAN CHICKEN RICE</h3>
+              <div class="price">Rp 75.000</div>
+            </div>
+            <p>Grilled aussy premium angusstriploin with mixed salad,chimmichuri mushroom sauce</p>
+            <div class="price-menu">
+              <h3>ASAM IGA SOUP</h3>
+              <div class="price">Rp 75.000</div>
+            </div>
+            <p>Grilled US Top Blade served withfrench fries, mixed salad and mushroom sauce</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/ikan1.png" alt="gambarSate1" />
+          <div class="list-menu">
+            <div class="price-menu">
+              <h3>BUNTUT TENGGIRI</h3>
+              <div class="price">Rp 75.000</div>
+            </div>
+            <p>Grilled aussy premium angusstriploin with mixed salad,chimmichuri mushroom sauce</p>
+            <div class="price-menu">
+              <h3>JEBUNG BAKAR</h3>
+              <div class="price">Rp 75.000</div>
+            </div>
+            <p>Grilled aussy premium angusstriploin with mixed salad,chimmichuri mushroom sauce</p>
+            <div class="price-menu">
+              <h3>KAKAP BAKAR TALIWANG</h3>
+              <div class="price">Rp 80.000</div>
+            </div>
+            <p>Grilled US Top Blade served withfrench fries, mixed salad andmushroom sauce</p>
+            <div class="price-menu">
+              <h3>GURAME BAKAR BUMBU RUJAK</h3>
+              <div class="price">Rp 95.000</div>
+            </div>
+            <p>Grilled US Top Blade served withfrench fries, mixed salad andmushroom sauce</p>
+          </div>
+        </div>
+      </div>
+      <!-- main dishes end -->
+
+      <!-- Beverage start -->
+      <h1 class="heading" id="beverage"><span>Beverages</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="assets/any-juice.png" alt="gambarBiryani" />
+          <div class="list-menu">
+            <div class="price-menu">
+              <h3>STRAWBERRY JUICE</h3>
+              <div class="price">Rp 28.000</div>
+            </div>
+
+            <div class="price-menu">
+              <h3>RED DRAGON JUICE</h3>
+              <div class="price">Rp 30.000</div>
+            </div>
+
+            <div class="price-menu">
+              <h3>MIX JUICE</h3>
+              <div class="price">Rp 35.000</div>
+            </div>
+            <p>Banana, apple, tomato</p>
+            <div class="price-menu">
+              <h3>AVOCADO JUICE</h3>
+              <div class="price">Rp 28.000</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/ice-tea.png" alt="gambarLasagna" />
+          <div class="list-menu">
+            <div class="list-beverage">
+              <div class="price-menu">
+                <h3>BLACKCURRANT</h3>
+                <div class="price">Rp 20.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>OOLONG</h3>
+                <div class="price">Rp 25.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>CHAMOMILE</h3>
+                <div class="price">Rp 25.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>CLASSIC ICE TEAD</h3>
+                <div class="price">Rp 20.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>JASMINE TEA</h3>
+                <div class="price">Rp 20.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>LEMON TEA</h3>
+                <div class="price">Rp 23.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>GREEN TEA</h3>
+                <div class="price">Rp 23.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>LYCHEE TEA</h3>
+                <div class="price">Rp 25.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/expresso.png" alt="gambarSate1" />
+          <div class="list-menu">
+            <div class="list-beverage">
+              <div class="price-menu">
+                <h3>ESPRESSO</h3>
+                <div class="price">Rp 20.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>CAPPUCINO</h3>
+                <div class="price">Rp 25.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>CAFFE LATTE</h3>
+                <div class="price">Rp 25.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>MOCHACINO</h3>
+                <div class="price">Rp 20.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>MACCHIATO</h3>
+                <div class="price">Rp 20.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>CARAMEL MACCHIATO</h3>
+                <div class="price">Rp 23.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>RED VELVET</h3>
+                <div class="price">Rp 23.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>VANILLA LATTE</h3>
+                <div class="price">Rp 25.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="assets/milk-shake.png" alt="gambarSate1" />
+          <div class="list-menu">
+            <div class="list-beverage">
+              <div class="price-menu">
+                <h3>VANILLA MILKSHAKE</h3>
+                <div class="price">Rp 35.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>CHOCO MILKSHAKE</h3>
+                <div class="price">Rp 35.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>ALMOND MILKSHAKE</h3>
+                <div class="price">Rp 45.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>STRAWBERRY MILKHSHAKE</h3>
+                <div class="price">Rp 35.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>REGAL MILKSHAKE</h3>
+                <div class="price">Rp 20.000</div>
+              </div>
+
+              <div class="price-menu">
+                <h3>OREO MILKSHAKE</h3>
+                <div class="price">Rp 23.000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Beverage end -->
+      </div>
+    </section>
+
+    <!-- dessert start -->
+    <section class="dessert" id="dessert">
+      <h1 class="heading">Desserts</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="assets/ice-cream.png" alt="gambarCatering" />
+          </div>
+          <div class="content">
+            <div class="price-menu">
+              <h3>Banana Chocolate Churros</h3>
+              <div class="price">25K</div>
+            </div>
+            <div class="price-menu">
+              <h3>Choco Ice Cream</h3>
+              <div class="price">25K</div>
+            </div>
+            <div class="price-menu">
+              <h3>Snow White Ice Cream</h3>
+              <div class="price">25K</div>
+            </div>
+            <div class="price-menu">
+              <h3>Strawberry Ice Cream</h3>
+              <div class="price">25K</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="assets/strewbery-cake.png" alt="gambarWedding" />
+          </div>
+          <div class="content">
+            <div class="price-menu">
+              <h3>Chocolate Cake</h3>
+              <div class="price">45K</div>
+            </div>
+            <div class="price-menu">
+              <h3>Vanilla Cake</h3>
+              <div class="price">45K</div>
+            </div>
+            <div class="price-menu">
+              <h3>Red Velvet Cake</h3>
+              <div class="price">45K</div>
+            </div>
+            <div class="price-menu">
+              <h3>Strawberry Cake</h3>
+              <div class="price">45K</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="assets/pie.png" alt="gambarEvent" />
+          </div>
+          <div class="content">
+            <div class="price-menu">
+              <h3>Apple Pie</h3>
+              <div class="price">25K</div>
+            </div>
+            <div class="price-menu">
+              <h3>Strawberry Panna Cotta</h3>
+              <div class="price">45K</div>
+            </div>
+            <div class="price-menu">
+              <h3>Creme Brulee</h3>
+              <div class="price">45K</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- dessert end -->
+    <!-- menu end -->
+
+    <!-- JavaScript link -->
+    <script src="JS/script.js"></script>
+  </body>
+</html>
