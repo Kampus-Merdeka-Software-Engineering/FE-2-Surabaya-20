@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&family=Playfair+Display:wght@400;500;600&display=swap");
 
 :root {
   --main-color: #d3ad7f;
@@ -9,7 +10,7 @@
 }
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -255,7 +256,7 @@ section {
   left: 0;
   right: 0;
   z-index: 999;
-  background: var(--black);
+  background: #13131af6;
   padding: 1.2rem;
 }
 
@@ -406,4 +407,64 @@ section {
   line-height: 1.8;
   color: #ccc;
   padding: 1rem 0;
+}
+
+/* Footer */
+.footer {
+  background: var(--bg-color);
+  text-align: center;
+}
+
+.footer .logo img {
+  height: 6.5rem;
+}
+
+.footer .share {
+  padding: 1rem 0;
+}
+
+.footer .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  border: var(--border);
+  margin: 0.3rem;
+  border-radius: 50%;
+}
+
+.footer .share a:hover {
+  background-color: var(--main-color);
+}
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.footer .links a {
+  padding: 0.7rem 2rem;
+  color: #fff;
+  border: var(--border);
+  font-size: 2rem;
+}
+
+.footer .links a:hover {
+  background: var(--main-color);
+}
+
+.footer .credit {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: lighter;
+  padding: 1.5rem;
+  font-weight: 600;
+}
+
+.footer .credit span {
+  color: var(--main-color);
 }
