@@ -75,6 +75,7 @@ section {
 
 .btn:hover {
   transform: translateY(-0.5rem);
+  background-color: #946d03f6;
 }
 
 .header {
@@ -407,6 +408,12 @@ section {
   line-height: 1.8;
   color: #ccc;
   padding: 1rem 0;
+}
+
+.dessert .btn-booking {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 /* Footer */
