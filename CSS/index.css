@@ -219,7 +219,9 @@ section {
 
 /* Home content */
 .home {
+  position: relative;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,10 +229,48 @@ section {
   background-size: cover;
   background-position: center;
   text-align: center;
+  animation: bgChange 20s linear infinite;
+}
+
+@keyframes bgChange {
+  0% {
+    background-image: url(../assets/background.png);
+  }
+  20% {
+    background-image: url(../assets/background.png);
+  }
+  25% {
+    background-image: url(../assets/background_2.jpg);
+  }
+  45% {
+    background-image: url(../assets/background_2.jpg);
+  }
+  50% {
+    background-image: url(../assets/background_3.jpg);
+  }
+  70% {
+    background-image: url(../assets/background_3.jpg);
+  }
+  75% {
+    background-image: url(../assets/background_4.jpg);
+  }
+  100% {
+    background-image: url(../assets/background_4.jpg);
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .home .content {
   max-width: 100%;
+  position: relative;
 }
 
 .home .content h3 {
