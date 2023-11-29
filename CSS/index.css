@@ -170,6 +170,7 @@ section {
   width: 35rem;
   background: #fff;
   padding: 0 1.5rem;
+  overflow: scroll;
 }
 
 .header .cart-items-container.active {
@@ -199,6 +200,7 @@ section {
 
 .header .cart-items-container .cart-item img {
   height: 7rem;
+  width: 9rem;
 }
 
 .header .cart-items-container .cart-item .content h3 {
@@ -210,6 +212,21 @@ section {
 .header .cart-items-container .cart-item .content .price {
   font-size: 1.5rem;
   color: var(--main-color);
+}
+
+.header .cart-items-container .cart-item .content span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.header .cart-items-container .cart-item .content input {
+  border: 1px solid #13131a;
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+  margin-top: 0.5rem;
+  width: 6rem;
 }
 
 .header .cart-items-container .btn {
@@ -281,7 +298,7 @@ section {
 }
 
 .home .content p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   line-height: 1.8;
   padding: 1rem 0;
