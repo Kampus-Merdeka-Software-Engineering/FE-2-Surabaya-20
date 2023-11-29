@@ -170,6 +170,7 @@ section {
   width: 35rem;
   background: #fff;
   padding: 0 1.5rem;
+  overflow: scroll;
 }
 
 .header .cart-items-container.active {
@@ -199,6 +200,7 @@ section {
 
 .header .cart-items-container .cart-item img {
   height: 7rem;
+  width: 9rem;
 }
 
 .header .cart-items-container .cart-item .content h3 {
@@ -210,6 +212,21 @@ section {
 .header .cart-items-container .cart-item .content .price {
   font-size: 1.5rem;
   color: var(--main-color);
+}
+
+.header .cart-items-container .cart-item .content span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.header .cart-items-container .cart-item .content input {
+  border: 1px solid #13131a;
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+  margin-top: 0.5rem;
+  width: 6rem;
 }
 
 .header .cart-items-container .btn {
@@ -281,14 +298,14 @@ section {
   padding: 1rem;
   width: 100%;
   background: #d9d9d9;
-  border-radius: 2rem;
+  border-radius: 3rem 0 3rem 0;
   margin-bottom: 1.5rem;
 }
 
 .list .box-container .box img {
   width: 20rem;
   height: auto;
-  border-radius: 2rem;
+  border-radius: 3rem 0 3rem 0;
 }
 
 .list .box-container .box:hover img {
@@ -355,21 +372,21 @@ section {
   border: var(--border);
   background: #d9d9d9;
   height: 47rem;
-  border-radius: 2rem;
+  border-radius: 4rem 0 4rem 0;
 }
 
 .dessert .box-container .box .image {
   height: 25rem;
   overflow: hidden;
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 4rem 0 0 0;
 }
 
 .dessert .box-container .box .image img {
   height: 100%;
   object-fit: cover;
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 4rem 0 0 0;
 }
 
 .dessert .box-container .box:hover .image img {
