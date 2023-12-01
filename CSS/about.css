@@ -233,3 +233,162 @@ section {
   width: 100%;
   text-align: center;
 }
+
+/* About us */
+.company-container {
+  margin-top: 10%;
+}
+
+.company-container .content-company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: var(--border);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.company-container .content-company .image-container {
+  width: 100rem;
+}
+
+.company-container .content-company .image-container img {
+  width: 100%;
+}
+
+.company-container .content-company .company-profile {
+  margin-left: 2rem;
+  padding: 1rem;
+  color: #fff;
+  width: 90rem;
+}
+
+.company-container .content-company .company-profile h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.company-container .content-company .company-profile p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Team profile */
+.team-container .team-profile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.team-container .team-profile .content-team {
+  border: var(--border);
+  text-align: center;
+  padding: 2rem;
+}
+
+.team-container .team-profile .content-team .team-image {
+  height: 30rem;
+  width: 25rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  margin: auto;
+}
+
+.team-container .team-profile .content-team .team-image img {
+  width: 25rem;
+  height: 30rem;
+  border-radius: 1rem;
+}
+
+.team-container .team-profile .content-team:hover {
+  transform: translateY(-0.7rem);
+  box-shadow: 2px 4px 4px 2px #ccc;
+}
+
+.team-container .team-profile .content-team .team-share {
+  padding: 1rem 0;
+}
+
+.team-container .team-profile .content-team .team-share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  border: var(--border);
+  margin: 0.3rem;
+  border-radius: 1.5rem;
+}
+
+.team-container .team-profile .content-team .team-share a:hover {
+  background-color: var(--main-color);
+}
+
+/* Media Queries */
+@media (max-width: 996px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 779px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .header .navbar a {
+    color: var(--black);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .header .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .content p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
