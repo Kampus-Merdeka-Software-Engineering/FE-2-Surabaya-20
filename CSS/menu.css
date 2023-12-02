@@ -438,7 +438,7 @@ section {
   text-align: center;
   background: #13131a;
   padding: 5rem;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -480,7 +480,7 @@ section {
 }
 
 .book-container .form-group input:focus {
-  border: 2px solid orange;
+  border: 2px solid var(--bg-color);
   transform: translateY(-2px);
 }
 
@@ -557,6 +557,11 @@ section {
   section {
     padding: 2rem;
   }
+
+  .book-container form {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 779px) {
@@ -620,6 +625,11 @@ section {
 
   .list .box-container .box:hover img {
     transform: scale(1.04);
+  }
+
+  .book-container form {
+    width: 100%;
+    height: auto;
   }
 }
 

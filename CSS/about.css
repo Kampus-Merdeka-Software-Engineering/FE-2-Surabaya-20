@@ -236,7 +236,7 @@ section {
 
 /* About us */
 .company-container {
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .company-container .content-company {
@@ -326,6 +326,73 @@ section {
   background-color: var(--main-color);
 }
 
+.team-container .team-profile .content-team .role-team {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background: var(--bg-color);
+  text-align: center;
+}
+
+.footer .logo img {
+  height: 6.5rem;
+}
+
+.footer .share {
+  padding: 1rem 0;
+}
+
+.footer .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  border: var(--border);
+  margin: 0.3rem;
+  border-radius: 50%;
+}
+
+.footer .share a:hover {
+  background-color: var(--main-color);
+}
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.footer .links a {
+  padding: 0.7rem 2rem;
+  color: #fff;
+  border: var(--border);
+  font-size: 2rem;
+}
+
+.footer .links a:hover {
+  background: var(--main-color);
+}
+
+.footer .credit {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: lighter;
+  padding: 1.5rem;
+  font-weight: 600;
+}
+
+.footer .credit span {
+  color: var(--main-color);
+}
+
 /* Media Queries */
 @media (max-width: 996px) {
   html {
@@ -372,18 +439,23 @@ section {
     right: 2rem;
   }
 
-  .home {
-    background-position: left;
-    justify-content: center;
-    text-align: center;
+  .company-container .content-company {
+    display: block;
+    text-align: left;
   }
 
-  .home .content h3 {
-    font-size: 4.5rem;
+  .company-container .content-company .image-container {
+    width: 100%;
+    height: auto;
   }
 
-  .home .content p {
-    font-size: 1.5rem;
+  .company-container .content-company .company-profile {
+    width: 100%;
+    height: auto;
+  }
+
+  .company-container .content-company .company-profile h3 {
+    text-align: left;
   }
 }
 
