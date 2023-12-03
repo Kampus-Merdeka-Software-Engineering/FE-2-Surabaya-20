@@ -68,6 +68,7 @@ function addList3() {
   }
   document.getElementById("struk-content").style.display = "block";
 }
+
 function addList4() {
   const menuName = document.getElementById("nama4");
   const menuPrice = document.getElementById("price4");

@@ -243,7 +243,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: var(--border);
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -271,7 +270,7 @@ section {
 }
 
 .company-container .content-company .company-profile p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 

@@ -199,8 +199,8 @@ section {
 }
 
 .header .cart-items-container .cart-item img {
-  height: 7rem;
-  width: 9rem;
+  height: 9rem;
+  width: 11rem;
 }
 
 .header .cart-items-container .cart-item .content h3 {
@@ -227,11 +227,57 @@ section {
   padding: 0.1rem;
   margin-top: 0.5rem;
   width: 6rem;
+  margin-bottom: 1rem;
 }
 
 .header .cart-items-container .btn {
   width: 100%;
   text-align: center;
+}
+
+.header .cart-items-container .cart-item .content .btn-add {
+  background: var(--main-color);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.header .cart-items-container .cart-item .content .btn-add:hover {
+  background: var(--bg-color);
+  transition: 0.3s;
+  letter-spacing: 0.2rem;
+}
+
+.header .cart-items-container .struk-container {
+  background: #ccc;
+  padding: 2rem;
+  display: none;
+}
+
+.header .cart-items-container .struk-container .sub-order {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header .cart-items-container .struk-container h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.header .cart-items-container .struk-container .sub-order p {
+  font-size: 1.5rem;
+}
+
+.header .cart-items-container .struk-container .order-subTotal {
+  padding: 1rem;
+  border-top: 2px solid #13131a;
+}
+
+.header .cart-items-container .struk-container .order-subTotal span {
+  font-size: 1.5rem;
 }
 
 /* Home content */
