@@ -1,3 +1,4 @@
+// responsif navbar
 let navbar = document.querySelector(".navbar");
 
 document.querySelector("#menu-btn").onclick = () => {
@@ -28,6 +29,19 @@ window.onscroll = () => {
   cartItem.classList.remove("active");
 };
 
+// active navbar
+let nav = document.getElementById("navbar");
+let btns = nav.getElementsByClassName("nav-link");
+
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    let current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+// order menu
 const amount = document.getElementById("counts");
 
 function addList1() {
