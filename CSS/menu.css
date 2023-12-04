@@ -280,6 +280,21 @@ section {
   font-size: 1.5rem;
 }
 
+.header .cart-items-container .struk-container .checklist-container {
+  background: transparent;
+  width: 100%;
+  display: none;
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.header .cart-items-container .struk-container .checklist-container img {
+  width: 50%;
+  height: auto;
+  margin-top: 1.5rem;
+}
+
 /* Home content */
 .home {
   min-height: 100vh;

@@ -94,6 +94,32 @@ function addList5() {
   document.getElementById("struk-content").style.display = "block";
 }
 
+function addList6() {
+  const menuName = document.getElementById("nama6");
+  const menuPrice = document.getElementById("price6");
+  const priceTotal = parseInt(document.getElementById("total6").value);
+
+  for (let i = 0; i <= priceTotal; i++) {
+    document.getElementById("subMenu").innerHTML = menuName.innerHTML + " x" + priceTotal;
+    document.getElementById("subTotal").innerHTML = "Rp " + parseInt(menuPrice.innerHTML) * priceTotal;
+    amount.innerHTML = "Rp " + parseInt(menuPrice.innerHTML) * priceTotal;
+  }
+  document.getElementById("struk-content").style.display = "block";
+}
+
+function addList7() {
+  const menuName = document.getElementById("nama7");
+  const menuPrice = document.getElementById("price7");
+  const priceTotal = parseInt(document.getElementById("total7").value);
+
+  for (let i = 0; i <= priceTotal; i++) {
+    document.getElementById("subMenu").innerHTML = menuName.innerHTML + " x" + priceTotal;
+    document.getElementById("subTotal").innerHTML = "Rp " + parseInt(menuPrice.innerHTML) * priceTotal;
+    amount.innerHTML = "Rp " + parseInt(menuPrice.innerHTML) * priceTotal;
+  }
+  document.getElementById("struk-content").style.display = "block";
+}
+
 function clearList() {
   document.getElementById("subMenu").innerHTML = "";
   document.getElementById("subTotal").innerHTML = "";
@@ -103,5 +129,8 @@ function clearList() {
   document.getElementById("total3").value = "";
   document.getElementById("total4").value = "";
   document.getElementById("total5").value = "";
-  document.getElementById("struk-content").style.display = "none";
+  document.getElementById("total6").value = "";
+  document.getElementById("total7").value = "";
+  document.getElementById("checklist-conten").style.display = "block";
+  document.getElementById("order").style.display = "none";
 }
