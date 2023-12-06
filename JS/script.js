@@ -49,6 +49,7 @@ async function fetchMenus() {
   try {
     const respon = await fetch(`${API_BASE_URL}/menus`);
     const menus = await respon.json();
+    console.log(menus);
 
     const menuContent = menus.map((item) => {
       return `
@@ -59,7 +60,7 @@ async function fetchMenus() {
         <a href="#" class="fas fa-eye"></a>
       </div>
       <div class="image">
-        <img src="assets/chocolate_Drink.jpg" alt="GambarBiryani" />
+        <img src="${item.image}" alt="GambarBiryani" />
       </div>
       <div class="content">
         <h3>${item.name}</h3>
@@ -70,7 +71,7 @@ async function fetchMenus() {
           <i class="fas fa-star"></i>
           <i class="fas fa-star-half-alt"></i>
         </div>
-        <div class="price">Rp ${item.price} <span>Rp ${item.originalprice}</span></div>
+        <div class="price">Rp ${item.price} <span>Rp ${item.originalPrice}</span></div>
       </div>
     </div>
       `;
@@ -82,6 +83,25 @@ async function fetchMenus() {
   }
 }
 fetchMenus();
+
+// create customers contact/feedback form
+async function createCustomers() {
+  const name = document.getElementById("contact-users").value;
+  const email = document.getElementById("contact-email").value;
+  const phone = document.getElementById("contact-phone").value;
+  const message = document.getElementById("contact-message").value;
+  try {
+    await fetch(`${API_BASE_URL}/customers`, {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, phone, message }),
+    });
+    alert("Submit is Successfully, Thankyou for contact or feedback");
+  } catch (error) {
+    console.log(error);
+    alert("An error occurred while submitting the form");
+  }
+}
 
 // order menu in cart
 const amount = document.getElementById("counts");
