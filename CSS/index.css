@@ -411,6 +411,10 @@ section {
   gap: 1.5rem;
 }
 
+.menu .eksplore-menus {
+  text-align: center;
+}
+
 .menu .box-container .box {
   padding: 5rem;
   text-align: center;
@@ -532,6 +536,10 @@ section {
 }
 
 /* Offers event */
+.offers .goto-contactus {
+  text-align: center;
+}
+
 .offers .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
