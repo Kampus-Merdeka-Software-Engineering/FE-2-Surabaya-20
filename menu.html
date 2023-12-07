@@ -448,12 +448,56 @@
             <input type="number" name="person" id="person" />
           </div>
           <div class="btn-booking">
-            <button type="button" class="btn">Booking Now</button>
+            <button type="button" class="btn" onclick="bookTable()">Booking Now</button>
           </div>
         </form>
       </div>
     </div>
     <!-- Book table end -->
+
+    <!-- Receipt book form -->
+    <div class="booking-success" id="booking-success">
+      <h3><span class="checkmark">&#10004;</span> Booking Success</h3>
+    </div>
+    <div class="receipt" id="receipt-content">
+      <h1>PrimeRESTO</h1>
+      
+      <!-- Form pengirim -->
+      <div class="sender-info">
+          <h2>Receipt</h2>
+      </div>
+
+      <!-- Tabel pesanan -->
+      <table class="order-table">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Total person</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td id="book-name"></td>
+                  <td id="book-email"></td>
+                  <td id="book-date"></td>
+                  <td id="book-time"></td>
+                  <td id="book-person"></td>
+              </tr>
+          </tbody>
+      </table>
+
+      <div class="thankyou">
+          <h3>Thank You for Choosing PrimeRESTO</h1>
+      </div>
+      
+    </div>
+    <div class="btn-download" id="btn-download">
+      <button id="downloadButton" onclick="downloadReceipt()">Download Receipt</button>
+    </div>
+    <!-- end receipt book form -->
 
     <!-- footer start -->
     <section class="footer">

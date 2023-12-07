@@ -96,3 +96,115 @@ function clearList() {
   document.getElementById("checklist-conten").style.display = "block";
   document.getElementById("order").style.display = "none";
 }
+
+function bookTable() {
+  // Get form values
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var date = document.getElementById("date").value;
+  var time = document.getElementById("time").value;
+  var person = document.getElementById("person").value;
+
+  // Display values in receipt
+  document.getElementById("book-name").textContent = name;
+  document.getElementById("book-email").textContent = email;
+  document.getElementById("book-date").textContent = date;
+  document.getElementById("book-time").textContent = time;
+  document.getElementById("book-person").textContent = person;
+
+  // Show receipt content
+  document.getElementById("booking-success").style.display = "block";
+  document.getElementById("receipt-content").style.display = "block";
+  document.getElementById("btn-download").style.display = "block";
+}
+
+function downloadReceipt() {
+  // Get the content of the receipt
+  var receiptContent = `
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Receipt</title>
+        <style>
+          /* Gaya disalin dari stylesheet pada bagian head */
+          body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+
+          .receipt {
+            display: none;
+            background-color: #fff;
+            max-width: 900px;
+            margin: 65px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 6px 6px 2px rgba(0, 0, 0, 0.9);
+            border-radius: 5px;
+          }
+          
+          h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5rem;
+          }
+          
+          .sender-info {
+            text-align: center;
+            float: right;
+            margin-bottom: 0.3rem;
+            color: #333;
+            font-size: 1rem;
+          }
+          
+          .order-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+          }
+          
+          .order-table th,
+          .order-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            font-size: 1rem;
+          }
+          
+          .order-table th {
+            background-color: #f5f5f5;
+          }
+          
+          .receipt .thankyou {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 2rem;
+          }
+        </style>
+      </head>
+      <body>
+        ${document.getElementById("receipt-content").outerHTML}
+      </body>
+    </html>
+  `;
+
+  // Create a Blob containing the HTML content
+  var blob = new Blob([receiptContent], { type: "text/html" });
+
+  // Create a link element
+  var a = document.createElement("a");
+
+  // Set the download attribute and create a download URL
+  a.download = "receipt.html";
+  a.href = window.URL.createObjectURL(blob);
+
+  // Append the link to the document and trigger a click
+  document.body.appendChild(a);
+  a.click();
+
+  // Remove the link from the document
+  document.body.removeChild(a);
+}
