@@ -20,7 +20,6 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="#menu" class="nav-link active">Menu</a>
-        <a href="#product" class="nav-link">Product</a>
         <a href="index.html#offers" class="nav-link">Offers</a>
         <a href="index.html#review" class="nav-link">Review</a>
         <a href="#booking" class="nav-link">Booking</a>
@@ -39,103 +38,32 @@
       </div>
 
       <div class="cart-items-container">
-        <div class="cartList-content" id="cart-container">
-          <div class="cart-item">
-            <img src="assets/ice-tea.png" alt="cartItem" />
-            <div class="content">
-              <h3 id="nama1">Ice Tea</h3>
-              <span class="price">Rp </span><span class="price" id="price1">15000</span>
-              <div class="input"><span>Total</span><input class="totalNumber" type="number" name="total" id="total1" /></div>
-              <button class="btn-add" onclick="addList1()">add</button>
-            </div>
-          </div>
-
-          <div class="cart-item">
-            <img src="assets/chocolate_Drink.jpg" alt="cartItem" />
-            <div class="content">
-              <h3 id="nama2">Chocolate Drink</h3>
-              <span class="price">Rp </span><span class="price" id="price2">15000</span>
-              <div class="input"><span>Total</span><input class="totalNumber" type="number" name="total" id="total2" /></div>
-              <button class="btn-add" onclick="addList2()">add</button>
-            </div>
-          </div>
-
-          <div class="cart-item">
-            <img src="assets/pasta.jpg" alt="cartItem" />
-            <div class="content">
-              <h3 id="nama3">Pasta Makaroni</h3>
-              <span class="price">Rp </span><span class="price" id="price3">25000</span>
-              <div class="input"><span>Total</span><input class="totalNumber" type="number" name="total" id="total3" /></div>
-              <button class="btn-add" onclick="addList3()">add</button>
-            </div>
-          </div>
-
-          <div class="cart-item">
-            <img src="assets/pizza.png" alt="cartItem" />
-            <div class="content">
-              <h3 id="nama4">Mushroom Pizza</h3>
-              <span class="price">Rp </span><span class="price" id="price4">30000</span>
-              <div class="input"><span>Total</span><input class="totalNumber" type="number" name="total" id="total4" /></div>
-              <button class="btn-add" onclick="addList4()">add</button>
-            </div>
-          </div>
-
-          <div class="cart-item">
-            <img src="assets/cake.jpg" alt="cartItem" />
-            <div class="content">
-              <h3 id="nama5">Orange Cake</h3>
-              <span class="price">Rp </span><span class="price" id="price5">15000</span>
-              <div class="input"><span>Total</span><input class="totalNumber" type="number" name="total" id="total5" /></div>
-              <button class="btn-add" onclick="addList5()">add</button>
-            </div>
-          </div>
-
-          <div class="cart-item">
-            <img src="assets/ikan1.png" alt="cartItem" />
-            <div class="content">
-              <h3 id="nama6">Grilled Fish</h3>
-              <span class="price">Rp </span><span class="price" id="price6">20000</span>
-              <div class="input"><span>Total</span><input type="number" name="total" id="total6" /></div>
-              <button class="btn-add" onclick="addList6()">add</button>
-            </div>
-          </div>
-
-          <div class="cart-item">
-            <img src="assets/steak.jpg" alt="cartItem" />
-            <div class="content">
-              <h3 id="nama7">Beef Steak</h3>
-              <span class="price">Rp </span><span class="price" id="price7">15000</span>
-              <div class="input"><span>Total</span><input type="number" name="total" id="total7" /></div>
-              <button class="btn-add" onclick="addList7()">add</button>
-            </div>
-          </div>
-
-          <div class="struk-container" id="struk-content">
-            <div class="main-order" id="order">
-              <div class="sub-order">
-                <div class="order-listMenu">
-                  <h3>Menu</h3>
-                  <p id="subMenu"></p>
-                </div>
-                <div class="order-listPrice">
-                  <h3>SubTotal</h3>
-                  <p id="subTotal"></p>
-                </div>
+        <div class="cartList-content" id="cart-container"></div>
+        <div class="struk-container" id="struk-content">
+          <div class="main-order" id="order">
+            <div class="sub-order">
+              <div class="order-listMenu">
+                <h3>Menu</h3>
+                <p id="subMenu"></p>
               </div>
-              <div class="order-subTotal">
-                <h3>Total :</h3>
-                <span id="counts"></span>
+              <div class="order-listPrice">
+                <h3>SubTotal</h3>
+                <p id="subTotal"></p>
               </div>
             </div>
-
-            <div class="checklist-container" id="checklist-conten">
-              <h3>Order is Successfully, Thankyou</h3>
-              <img src="assets/checklist.png" alt="imageChecklist" />
+            <div class="order-subTotal">
+              <h3>Total :</h3>
+              <span id="counts"></span>
             </div>
           </div>
 
-          <button class="btn" onclick="clearList()">checkout now</button>
+          <div class="checklist-container" id="checklist-conten">
+            <h3>Order is Successfully, Thankyou</h3>
+            <img src="assets/checklist.png" alt="imageChecklist" />
+          </div>
         </div>
+
+        <button class="btn" onclick="clearList()">checkout now</button>
       </div>
     </header>
     <!-- header end -->
@@ -144,7 +72,6 @@
     <section class="home" id="home">
       <div class="content">
         <h3>our menu</h3>
-      
       </div>
     </section>
     <!-- home end -->

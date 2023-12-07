@@ -180,10 +180,12 @@ section {
 
 .header .cart-items-container .cart-item {
   position: relative;
-  margin: 2rem 0;
+  margin: 1rem 0;
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  border: 1px solid #000000;
+  padding: 0.5rem;
 }
 
 .header .cart-items-container .cart-item .fa-times {
