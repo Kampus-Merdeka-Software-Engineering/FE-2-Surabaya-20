@@ -97,25 +97,41 @@ function clearList() {
   document.getElementById("order").style.display = "none";
 }
 
-function bookTable() {
+// create post booking form
+// async function createCustomers() {
+
+// }
+
+async function bookTable() {
   // Get form values
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
-  var date = document.getElementById("date").value;
-  var time = document.getElementById("time").value;
-  var person = document.getElementById("person").value;
+  var tanggal = document.getElementById("date").value;
+  var waktu = document.getElementById("time").value;
+  var total_person = document.getElementById("person").value;
 
   // Display values in receipt
   document.getElementById("book-name").textContent = name;
   document.getElementById("book-email").textContent = email;
-  document.getElementById("book-date").textContent = date;
-  document.getElementById("book-time").textContent = time;
-  document.getElementById("book-person").textContent = person;
+  document.getElementById("book-date").textContent = tanggal;
+  document.getElementById("book-time").textContent = waktu;
+  document.getElementById("book-person").textContent = total_person;
 
   // Show receipt content
   document.getElementById("booking-success").style.display = "block";
   document.getElementById("receipt-content").style.display = "block";
   document.getElementById("btn-download").style.display = "block";
+
+  try {
+    await fetch(`${API_BASE_URL}/bookings`, {
+      method: "post",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, tanggal, waktu, total_person }),
+    });
+    alert("Submit is Successfully, Thankyou");
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 function downloadReceipt() {

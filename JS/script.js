@@ -76,7 +76,7 @@ async function fetchMenus() {
 }
 fetchMenus();
 
-// create customers contact/feedback form
+// create post customers contact/feedback form
 async function createCustomers() {
   const name = document.getElementById("contact-users").value;
   const email = document.getElementById("contact-email").value;
@@ -91,6 +91,5 @@ async function createCustomers() {
     alert("Submit is Successfully, Thankyou for contact or feedback");
   } catch (error) {
     console.log(error);
-    alert("An error occurred while submitting the form");
   }
 }
