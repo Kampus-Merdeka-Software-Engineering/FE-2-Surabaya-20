@@ -91,5 +91,10 @@ async function createCustomers() {
     alert("Submit is Successfully, Thankyou for contact or feedback");
   } catch (error) {
     console.log(error);
+  } finally {
+    name.value = "";
+    email.value = "";
+    phone.value = "";
+    message.value = "";
   }
 }
