@@ -33,7 +33,7 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
-const API_BASE_URL = "https://be-2-surabaya-20-production.up.railway.app/";
+const API_BASE_URL = "https://be-2-surabaya-20-production.up.railway.app";
 const menuContainer = document.getElementById("cart-container");
 const subMenuElement = document.getElementById("subMenu");
 const subTotalElement = document.getElementById("subTotal");
