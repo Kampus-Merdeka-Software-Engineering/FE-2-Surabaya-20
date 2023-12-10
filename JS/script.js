@@ -34,7 +34,7 @@ for (let i = 0; i < btns.length; i++) {
 }
 
 // get data menus from json
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://be-2-surabaya-20-production.up.railway.app/";
 
 async function fetchMenus() {
   const menuContainer = document.getElementById("menu-container");

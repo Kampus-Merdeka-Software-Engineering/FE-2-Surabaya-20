@@ -7,14 +7,6 @@ document.querySelector("#menu-btn").onclick = () => {
   cartItem.classList.remove("active");
 };
 
-let searchForm = document.querySelector(".search-form");
-
-document.querySelector("#search-btn").onclick = () => {
-  searchForm.classList.toggle("active");
-  navbar.classList.remove("active");
-  cartItem.classList.remove("active");
-};
-
 let cartItem = document.querySelector(".cart-items-container");
 
 document.querySelector("#cart-btn").onclick = () => {
@@ -41,7 +33,7 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
-const API_BASE_URL = "http://localhost:3000";
+const API_BASE_URL = "https://be-2-surabaya-20-production.up.railway.app/";
 const menuContainer = document.getElementById("cart-container");
 const subMenuElement = document.getElementById("subMenu");
 const subTotalElement = document.getElementById("subTotal");
@@ -109,7 +101,7 @@ function addList(index) {
 
 getAllmenus();
 
-function clearList() {
+function checkoutList() {
   document.getElementById("checklist-conten").style.display = "block";
 }
 

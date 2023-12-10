@@ -113,54 +113,30 @@ section {
 .header .icons div {
   color: #fff;
   cursor: pointer;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-left: 2rem;
 }
 
 .header .icons div:hover {
   color: var(--main-color);
-  transform: scale(1.2);
+  transform: scale(1.17);
+}
+
+.header .icons #cart-btn {
+  background: #fff;
+  padding: 0.7rem 1rem;
+  color: var(--bg-color);
+  border-radius: 1rem;
+  font-size: 2.5rem;
+}
+
+.header .icons #cart-btn span {
+  font-size: 2rem;
+  margin-left: 0.5rem;
 }
 
 #menu-btn {
   display: none;
-}
-
-.header .search-form {
-  position: absolute;
-  top: 115%;
-  right: 7%;
-  background: #fff;
-  width: 50rem;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  transform: scaleY(0);
-  transform-origin: top;
-}
-
-.header .search-form.active {
-  transform: scaleY(1);
-}
-
-.header .search-form input {
-  height: 100%;
-  width: 100%;
-  font-size: 1.6rem;
-  color: var(--black);
-  padding: 1rem;
-  text-transform: none;
-}
-
-.header .search-form label {
-  cursor: pointer;
-  font-size: 2.2rem;
-  margin-right: 1.5rem;
-  color: var(--black);
-}
-
-.header .search-form label:hover {
-  color: var(--main-color);
 }
 
 .header .cart-items-container {
@@ -178,6 +154,31 @@ section {
   right: 0;
 }
 
+.header .cart-items-container .search-menu {
+  background: #fff;
+  width: 34rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  border: 1px solid #000;
+}
+
+.header .cart-items-container .search-menu input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--black);
+  padding: 1rem;
+}
+
+.header .cart-items-container .search-menu label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--black);
+}
+
 .header .cart-items-container .cart-item {
   position: relative;
   margin: 1rem 0;
@@ -186,19 +187,6 @@ section {
   gap: 1.5rem;
   border: 1px solid #000000;
   padding: 0.5rem;
-}
-
-.header .cart-items-container .cart-item .fa-times {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--black);
-}
-
-.header .cart-items-container .cart-item .fa-times:hover {
-  color: var(--main-color);
 }
 
 .header .cart-items-container .cart-item img {

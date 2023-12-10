@@ -28,17 +28,16 @@
       </nav>
 
       <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"><span>order</span></div>
         <div class="fas fa-bars" id="menu-btn"></div>
       </div>
 
-      <div class="search-form">
-        <input type="search" id="search-box" placeholder="search here..." />
-        <label for="search-box" class="fas fa-search"></label>
-      </div>
-
       <div class="cart-items-container">
+        <div class="search-menu">
+          <input type="search" id="search-box" placeholder="search menus..." />
+          <label for="search-box" class="fas fa-search"></label>
+        </div>
+
         <div class="cartList-content" id="cart-container"></div>
         <div class="struk-container" id="struk-content">
           <div class="main-order" id="order">
@@ -64,7 +63,7 @@
           </div>
         </div>
 
-        <button class="btn" onclick="clearList()">checkout now</button>
+        <button class="btn" onclick="checkoutList()">checkout now</button>
       </div>
     </header>
     <!-- header end -->
@@ -427,7 +426,7 @@
     <div class="book-container" id="booking">
       <h3>Book <span>A table</span></h3>
       <div class="form-continer">
-        <form action="#" id="form-booking">
+        <form id="form-booking">
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Your name" required/>
