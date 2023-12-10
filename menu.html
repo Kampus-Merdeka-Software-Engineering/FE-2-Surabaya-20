@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <!-- Style CSS -->
     <link rel="stylesheet" href="CSS/menu.css" />
-
   </head>
   <body>
     <!-- Header start -->
@@ -22,7 +21,7 @@
           <a href="#login" class="fas fa-user" id="login"></a>
           <div class="userid">user01</div>
         </div>
-        
+
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="#menu" class="nav-link active">Menu</a>
@@ -60,6 +59,16 @@
             <div class="order-subTotal">
               <h3>Total harga</h3>
               <span id="counts"></span>
+            </div>
+
+            <div class="form-payment">
+              <select name="select-payment" id="payment">
+                <option value="Payment-methode">--Select Payment methode--</option>
+                <option value="OVO">OVO</option>
+                <option value="GoPay">GoPay</option>
+                <option value="DANA">DANA</option>
+                <option value="MBanking">BNI Mobile Banking</option>
+              </select>
             </div>
           </div>
 
@@ -435,23 +444,23 @@
         <form id="form-booking">
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Your name" required/>
+            <input type="text" name="name" id="name" placeholder="Your name" required />
           </div>
           <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Your email" required/>
+            <input type="email" name="email" id="email" placeholder="Your email" required />
           </div>
           <div class="form-group">
             <label for="date">Date:</label>
-            <input type="date" name="date" id="date" required/>
+            <input type="date" name="date" id="date" required />
           </div>
           <div class="form-group">
             <label for="Time">Time:</label>
-            <input type="time" name="time" id="time" required/>
+            <input type="time" name="time" id="time" required />
           </div>
           <div class="form-group">
             <label for="person">Total person:</label>
-            <input type="number" name="person" id="person" required/>
+            <input type="number" name="person" id="person" required />
           </div>
           <div class="btn-booking">
             <button type="button" class="btn" onclick="bookTable()">Booking Now</button>
@@ -467,38 +476,41 @@
     </div>
     <div class="receipt" id="receipt-content">
       <h1>PrimeRESTO</h1>
-      
+
       <!-- Form pengirim -->
       <div class="sender-info">
-          <h2>Receipt</h2>
+        <h2>Receipt</h2>
       </div>
 
       <!-- Tabel pesanan -->
       <table class="order-table">
-          <thead>
-              <tr>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th>Total person</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td id="book-name"></td>
-                  <td id="book-email"></td>
-                  <td id="book-date"></td>
-                  <td id="book-time"></td>
-                  <td id="book-person"></td>
-              </tr>
-          </tbody>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Total person</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="book-name"></td>
+            <td id="book-email"></td>
+            <td id="book-date"></td>
+            <td id="book-time"></td>
+            <td id="book-person"></td>
+          </tr>
+        </tbody>
       </table>
 
-      <div class="thankyou">
-          <h3>Thank You for Choosing PrimeRESTO</h1>
+      <div class="down-payment">
+        <h3>Down payment : Rp. 150.000/-</h3>
       </div>
-      
+
+      <div class="thankyou">
+        <h3>Thank You for Choosing PrimeRESTO</h3>
+      </div>
     </div>
     <div class="btn-download" id="btn-download">
       <button id="downloadButton">Download Receipt</button>

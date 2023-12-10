@@ -127,11 +127,11 @@ section {
 }
 
 .header .icons #user-btn {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   background: #fff;
   text-align: center;
-  line-height: 5rem;
+  line-height: 4rem;
   color: var(--bg-color);
   border: none;
   border-radius: 50%;
