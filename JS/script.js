@@ -88,10 +88,10 @@ async function createCustomers() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, phone, message }),
     });
-    alert("Submit is Successfully, Thankyou for contact or feedback");
   } catch (error) {
     console.log(error);
   } finally {
+    alert("Submit is Successfully, Thankyou for contact or feedback");
     name.value = "";
     email.value = "";
     phone.value = "";

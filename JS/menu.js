@@ -131,10 +131,10 @@ async function bookTable() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, tanggal, waktu, total_person }),
     });
-    alert("Submit is Successfully, Thankyou");
   } catch (error) {
     console.log(error);
   } finally {
+    alert("Submit is Successfully, Thankyou");
     name.value = "";
     email.value = "";
     tanggal.value = "";
