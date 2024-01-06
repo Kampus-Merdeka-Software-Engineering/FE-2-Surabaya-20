@@ -64,7 +64,7 @@ async function getAllmenus() {
 
     menuContainer.innerHTML = menuContent.join("");
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 }
 
@@ -72,10 +72,6 @@ function addList(index) {
   const itemName = document.getElementById(`nama${index}`).innerText;
   const itemPrice = parseFloat(document.getElementById(`price${index}`).innerText);
   const itemTotal = parseFloat(document.getElementById(`total${index}`).value);
-
-  console.log(`Item Name: ${itemName}`);
-  console.log(`Item Price: ${itemPrice}`);
-  console.log(`Item Total: ${itemTotal}`);
 
   const orderItemTotal = itemPrice * itemTotal;
   totalOrderPrice += orderItemTotal;
@@ -132,7 +128,7 @@ async function bookTable() {
       body: JSON.stringify({ name, email, tanggal, waktu, total_person }),
     });
   } catch (error) {
-    console.log(error);
+    throw error;
   } finally {
     alert("Submit is Successfully, Thankyou");
     name.value = "";

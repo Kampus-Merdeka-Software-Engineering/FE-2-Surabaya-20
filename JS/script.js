@@ -41,7 +41,6 @@ async function fetchMenus() {
   try {
     const respon = await fetch(`${API_BASE_URL}/menus`);
     const menus = await respon.json();
-    console.log(menus);
 
     const menuContent = menus.map((item) => {
       return `
@@ -71,7 +70,7 @@ async function fetchMenus() {
 
     menuContainer.innerHTML = menuContent;
   } catch (error) {
-    console.log(error);
+    throw error;
   }
 }
 fetchMenus();
@@ -89,7 +88,7 @@ async function createCustomers() {
       body: JSON.stringify({ name, email, phone, message }),
     });
   } catch (error) {
-    console.log(error);
+    throw error;
   } finally {
     alert("Submit is Successfully, Thankyou for contact or feedback");
     name.value = "";
